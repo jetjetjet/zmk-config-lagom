@@ -17,7 +17,7 @@
         label = "Encoder 1";
         a-gpios = <&pro_micro 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        resolution = <4>;
+        resolution = <1>;
         status = "okay";
     };
 
@@ -26,7 +26,7 @@
         label = "Encoder 2";
         a-gpios = <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        resolution = <4>;
+        resolution = <1>;
         status = "okay";
     };
 
@@ -36,9 +36,9 @@
         debounce-period = <5>;
         polling-interval-msec = <25>;
         // input-gpios //  B1, B3, B2, B6, D4 nibble
-        //     = <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B3
-        //     , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B2
-        //     , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B1
+        //     = <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B1
+        //     , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B3
+        //     , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B2
         //     , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B6
         //     , <&pro_micro 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // D4
         //     ;
@@ -49,9 +49,9 @@
         //     , <&pro_micro 18 GPIO_ACTIVE_HIGH> // F7
         //     ;
         input-gpios //  B6, B2, B3, B1, F7 lagom
-            = <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B2
+            = <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B6
+            , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B2
             , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B3
-            , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B6
             , <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B1
             , <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // F7
             ;
