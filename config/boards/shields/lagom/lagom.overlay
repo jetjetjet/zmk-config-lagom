@@ -35,18 +35,31 @@
         label = "KSCAN";
         debounce-period = <5>;
         polling-interval-msec = <25>;
-        input-gpios
-            = <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        // input-gpios //  B1, B3, B2, B6, D4 nibble
+        //     = <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B3
+        //     , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B2
+        //     , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B1
+        //     , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B6
+        //     , <&pro_micro 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // D4
+        //     ;
+        // output-gpios // F4, F5, F6, F7 nibble
+        //     = <&pro_micro 21 GPIO_ACTIVE_HIGH> // F4
+        //     , <&pro_micro 20 GPIO_ACTIVE_HIGH> // F5
+        //     , <&pro_micro 19 GPIO_ACTIVE_HIGH> // F6
+        //     , <&pro_micro 18 GPIO_ACTIVE_HIGH> // F7
+        //     ;
+        input-gpios //  B6, B2, B3, B1, F7 lagom
+            = <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B2
+            , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B3
+            , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B6
+            , <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // B1
+            , <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // F7
             ;
-        output-gpios
-            = <&pro_micro 9 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 8 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 7 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 6 GPIO_ACTIVE_HIGH>
+        output-gpios // D7, E6, B4, B5 lagom
+            = <&pro_micro 6 GPIO_ACTIVE_HIGH> // D7
+            , <&pro_micro 7 GPIO_ACTIVE_HIGH> // E6
+            , <&pro_micro 8 GPIO_ACTIVE_HIGH> // B4
+            , <&pro_micro 9 GPIO_ACTIVE_HIGH> // B5
             ;
     };
 
