@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
+#define NONE 0
 
 #define WIN 0
 #define MWIN 1
@@ -72,7 +73,7 @@
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
-&kp TILDE   &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &kp EQUAL &kp MINUS  &kp UNDER  &tog WIN
+&kp TILDE   &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &kp EQUAL &kp MINUS  &kp UNDER  &tog OSX
 &none       &none     &none     &none     &none     &none     &none     &none     &none     &none     &none     &none     &none      &none      &none   &none
 &none       &none     &none     &none     &none     &none     &none     &none     &none     &none     &none     &none     &none                 &none   &none
 &none                 &none     &none     &none     &none     &none     &none     &none     &none     &none     &none     &none      &none      &none
