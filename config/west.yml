@@ -1,3 +1,6 @@
+include:
+  - board: nive_nano_v2
+    shield: lagom
 manifest:
   remotes:
     - name: zmkfirmware
