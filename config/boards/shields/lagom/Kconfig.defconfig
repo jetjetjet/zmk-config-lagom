@@ -6,6 +6,12 @@ if SHIELD_MY_BOARD
 config ZMK_KEYBOARD_NAME
     default "Lagom"
 
+config ZMK_SLEEP
+    default n
+
+config ZMK_EXT_POWER
+    default n
+
 config ZMK_USB
     default y
 
