@@ -9,7 +9,6 @@ config ZMK_KEYBOARD_NAME
 config ZMK_USB
     default y
 
-
 if ZMK_DISPLAY
 
 config ZMK_DISPLAY
@@ -31,6 +30,12 @@ config SSD1306_REVERSE_MODE
 endif # ZMK_DISPLAY
 
 if LVGL
+
+config LVGL_HOR_RES
+    default 128
+
+config LVGL_VER_RES
+    default 32
 
 config LV_Z_VDB_SIZE
     default 64
