@@ -31,12 +31,6 @@ endif # ZMK_DISPLAY
 
 if LVGL
 
-config LVGL_HOR_RES
-    default 128
-
-config LVGL_VER_RES
-    default 32
-
 config LV_Z_VDB_SIZE
     default 64
 
