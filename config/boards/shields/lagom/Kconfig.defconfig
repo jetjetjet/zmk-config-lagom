@@ -22,7 +22,7 @@ config SSD1306
     default y
 
 config SSD1306_REVERSE_MODE
-    default y
+    default n
 
 endif # ZMK_DISPLAY
 
@@ -36,9 +36,6 @@ config LV_Z_DPI
 
 config LV_Z_BITS_PER_PIXEL
     default 1
-
-config LV_DISP_SW_ROTATE
-    default y
 
 choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
