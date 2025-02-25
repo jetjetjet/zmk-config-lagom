@@ -28,11 +28,11 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp W>
-                , <&macro_wait_time 50>
+                , <&macro_wait_time 100>
                 , <&macro_press &kp LALT>
-                , <&macro_wait_time 50>
-                , <&macro_release &kp W>
+                , <&macro_wait_time 100>
                 , <&macro_release &kp LALT>
+                , <&macro_release &kp W>
                 ;
         };
     };
