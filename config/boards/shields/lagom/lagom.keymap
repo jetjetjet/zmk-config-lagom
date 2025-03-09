@@ -30,11 +30,10 @@
             tap-ms = <0>;
             bindings
                 = <&macro_press &kp W>
-                , <&macro_wait_time 15>
-                , <&macro_tap &kp LALT>
-                , <&macro_wait_time 300>
-                , <&macro_release &kp W>
+                , <&macro_press &kp LALT>
                 , <&macro_pause_for_release>
+                , <&macro_release &kp W>
+                , <&macro_release &kp LALT>
                 ;
         };
     };
